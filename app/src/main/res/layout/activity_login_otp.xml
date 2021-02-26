@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".login_otp"
+android:background="@color/colorBackground">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        android:background="#3498db">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="71dp"
+            android:text="Confirm Your Mobile\nNumber"
+            android:textColor="@android:color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.062" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/colorBackground">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="OTP Verification"
+            android:textColor="@color/colorTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Enter One Time Password Sent On"
+            android:textColor="@color/colorTextColor"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/loginnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Your Phone Number"
+            android:textColor="@color/colorTextColor"
+            android:textSize="16sp"
+            android:layout_marginTop="0dp"/>
+
+        <com.chaos.view.PinView
+            style="@style/PinWidget.PinView"
+            android:id="@+id/codeuserlg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="@color/colorBackground"
+            android:textColor="@color/colorTextColor"
+            app:itemCount="6"
+            app:itemHeight="50dp"
+            app:itemWidth="50dp"
+            app:lineColor="@color/colorTextColor">
+
+        </com.chaos.view.PinView>
+
+        <Button
+            android:id="@+id/lg_verifyb"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="Verify Code"
+            android:background="@drawable/custom_button2"
+            android:textColor="@android:color/white"
+            >
+
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/lg_pgbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+        </ProgressBar>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</ScrollView>
